@@ -1,0 +1,16 @@
+$ORIGIN sebastian.com.
+$TTL 3H
+@	IN SOA	parcial.sebastian.com. root@sebastian.com. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+@	IN      NS	parcial.sebastian.com.
+
+; hosts en la zona
+parcial  IN A 192.168.50.3
+www      IN CNAME parcial
+
+client  IN A 192.168.50.2
+xeno    IN CNAME parcial
